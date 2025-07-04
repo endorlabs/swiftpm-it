@@ -12,7 +12,7 @@ let package = Package(
             targets: ["LocalUtils"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/pointfreeco/swift-composable-architecture.git", from: "1.0.0")
+        .package(url: "https://github.com/airbnb/lottie-ios.git", from: "4.0.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "LocalUtils",
             dependencies: [
-                .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
+                .product(name: "Lottie", package: "lottie-ios")
             ]
         ),
         .testTarget(
