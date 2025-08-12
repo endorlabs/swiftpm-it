@@ -16,7 +16,7 @@ let package = Package(
         .package(url: "https://github.com/Alamofire/Alamofire.git", branch: "master"),
         .package(url: "https://github.com/apple/swift-nio.git", exact: "2.84.0"),
         .package(url: "https://github.com/typealiased/mockingbird.git", exact: "0.20.0"),
-        .package(url: "https://github.com/apple/swift-numerics.git", revision: "1be6eb5b4743d3b81f342e7398b87b5fd7d78b85"),
+        .package(url: "https://github.com/apple/swift-log.git", revision: "21d132f1ca3e7b3dafe2928108efd46301532f19"),
         .package(path: "Modules/LocalUtils"),
     ],
     targets: [
@@ -28,7 +28,7 @@ let package = Package(
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
                 .product(name: "Alamofire", package: "Alamofire"),
                 .product(name: "NIO", package: "swift-nio"),
-                .product(name: "Numerics", package: "swift-numerics"),
+                .product(name: "Logging", package: "swift-log"),
                 "LocalUtils",
             ]),
         .testTarget(
